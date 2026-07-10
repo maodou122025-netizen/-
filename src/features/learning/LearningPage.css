@@ -1,0 +1,137 @@
+.learning-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 32px;
+}
+
+.learning-hero {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 28px;
+  color: white;
+  margin: 0 auto 24px;
+  max-width: 1180px;
+  padding: 40px;
+}
+
+.learning-hero h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  margin: 8px 0 12px;
+}
+
+.learning-layout {
+  align-items: start;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 320px minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.learning-content {
+  display: grid;
+  gap: 24px;
+}
+
+.learning-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgb(15 23 42 / 8%);
+  padding: 24px;
+}
+
+.learning-kicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.example-meta {
+  color: #64748b;
+}
+
+.problem-box,
+.summary-box {
+  background: #eff6ff;
+  border-radius: 18px;
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 18px;
+}
+
+.selector-group + .selector-group {
+  margin-top: 20px;
+}
+
+.selector-group h3 {
+  color: #475569;
+  font-size: 15px;
+}
+
+.selector-options {
+  display: grid;
+  gap: 10px;
+}
+
+.selector-option {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 14px;
+  text-align: left;
+}
+
+.selector-option span,
+.selector-option strong {
+  display: block;
+}
+
+.selector-option.is-active {
+  background: #dbeafe;
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+.math-diagram svg {
+  background: #f8fafc;
+  border-radius: 18px;
+  width: 100%;
+}
+
+.step-list {
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.step-list li {
+  align-items: flex-start;
+  display: flex;
+  gap: 14px;
+}
+
+.step-index {
+  align-items: center;
+  background: #2563eb;
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  flex: 0 0 32px;
+  height: 32px;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .learning-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-page {
+    padding: 16px;
+  }
+}
